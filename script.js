@@ -22,6 +22,8 @@ submit.addEventListener("click", () => {
     document.getElementById("day-error").innerHTML = "";
     document.getElementById("month-error").innerHTML = "";
     document.getElementById("year-error").innerHTML = "";
+    
+    
 
 
     //current date
@@ -41,8 +43,8 @@ submit.addEventListener("click", () => {
     if(inputYear == ""){
         //display error message -> empty
         document.getElementById("year-error").innerHTML = errorEmpty;
-        document.getElementById("year").style.borderColor = "red";
-        document.getElementById("year-error").style.color = "red";
+        document.getElementById("year").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("year-error").style.color = "hsl(0, 100%, 67%)";
         validYear = false;
 
     }
@@ -50,8 +52,8 @@ submit.addEventListener("click", () => {
         //invalid year
         validYear = false;
         document.getElementById("year-error").innerHTML = errorYear;
-        document.getElementById("year").style.borderColor = "red";
-        document.getElementById("year-error").style.color = "red";
+        document.getElementById("year").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("year-error").style.color = "hsl(0, 100%, 67%)";
     }
     else{
         validYear = true;
@@ -65,16 +67,16 @@ submit.addEventListener("click", () => {
     {
         //display error message
         document.getElementById("month-error").innerHTML = errorEmpty;
-        document.getElementById("month").style.borderColor = "red";
-        document.getElementById("month-error").style.color = "red";
+        document.getElementById("month").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("month-error").style.color = "hsl(0, 100%, 67%)";
         validMonth = false;
     }
     else if(inputMonth < 1 || inputMonth > 12)
     {
         //invalid moth
         document.getElementById("month-error").innerHTML = errorMonth;
-         document.getElementById("month").style.borderColor = "red";
-        document.getElementById("month-error").style.color = "red";
+         document.getElementById("month").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("month-error").style.color = "hsl(0, 100%, 67%)";
         validMonth = false;
     }
     else{
@@ -89,16 +91,16 @@ submit.addEventListener("click", () => {
     {
         //display error message
         document.getElementById("day-error").innerHTML = errorEmpty;
-        document.getElementById("day").style.borderColor = "red";
-        document.getElementById("day-error").style.color = "red";
+        document.getElementById("day").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("day-error").style.color = "hsl(0, 100%, 67%)";
         validDay = false;
     }
     else if(inputDay < 1 || inputDay > 31)
     {
         //invalid days
         document.getElementById("day-error").innerHTML = errorDay;
-        document.getElementById("day").style.borderColor = "red";
-        document.getElementById("day-error").style.color = "red";
+        document.getElementById("day").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("day-error").style.color = "hsl(0, 100%, 67%)";
         validDay = false;
     }
     else{
@@ -112,6 +114,7 @@ submit.addEventListener("click", () => {
         document.getElementById("result-years").innerHTML = year - inputYear;
         document.getElementById("result-months").innerHTML = Math.abs(month - inputMonth);
         document.getElementById("result-days").innerHTML = Math.abs(day - inputDay);
+        
 
     }
     
