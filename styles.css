@@ -42,7 +42,7 @@ body{
 
 hr{
     height: 1px;
-    width: 35em;
+    width: 30vw;
     display: block;
     background-color: black;
     margin: auto;
@@ -59,13 +59,12 @@ hr{
 
 .input-button{
     background-color: hsl(259, 100%, 65%);
-    
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 60vw;
+    max-height: 60vw;
     border-radius: 50%;
     margin-left: 0px;
-    padding-left: 10px;
-    padding-top: 10px;
+    
+    padding: 10px;
     
 
 }
@@ -77,9 +76,7 @@ hr{
     font-style: italic;
 }
 .date-text h1{
-    
-    display: inline;
-    
+    display: inline;   
 }
 
 .static-text{
@@ -91,8 +88,48 @@ hr{
 }
 
 @media(max-width:700px){
-    .container{
-        
+    .user-input input{
+        max-width: 20vw;
+        height: 10vw;
+        padding: 2vw;
+        font-size: 3.5vw;
+       
+    }
+
+    #fdate{
+        margin-bottom: 10vw;
+    }
+    
+
+    .result{
+    
+       display: flex;
+       flex-direction: column;
+       margin-top: 20vw;
+    
+    }
+
+    .date-text h1{
+        font-size: 15vw;
+    }
+
+
+    hr{
+        display: none;
+    }
+
+    .input-button{
+       
+        display: flex;
+        max-width: 15vw;
+        max-height: 15vw;
+        margin-left: 200%;
+        padding: 10px;
+       
+    }
+
+    .user-input p{
+        font-size: 10px;
     }
     
 }
